@@ -1,21 +1,33 @@
-<<<<<<< HEAD
-# turimap
+# TuriMap
 
-A new Flutter project.
+Aplicación móvil Flutter para exploración y gestión de rutas turísticas.
 
-## Getting Started
+## Requisitos
 
-This project is a starting point for a Flutter application.
+- Flutter 3.11.1 o superior
+- Dart 3.11.1 o superior
 
-A few resources to get you started if this is your first Flutter project:
+## Instalación
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+```bash
+flutter pub get
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
-# AS_TuriMap
->>>>>>> 2b231dfd4d4616458d837feb1be24fb1743d9ddf
+## Ejecución
+
+```bash
+flutter run
+```
+
+## Estructura del proyecto
+
+- `lib/` - Código fuente de la aplicación
+  - `main.dart` - Punto de entrada
+  - `core/` - Lógica central compartida
+  - `features/` - Módulos de características
+- `test/` - Pruebas unitarias
+- `android/`, `ios/`, `web/`, `windows/`, `linux/`, `macos/` - Plataformas nativas
+
+## Licencia
+
+Privado

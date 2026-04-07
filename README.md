@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # turimap
 
 A new Flutter project.
@@ -15,3 +16,6 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# AS_TuriMap
+>>>>>>> 2b231dfd4d4616458d837feb1be24fb1743d9ddf

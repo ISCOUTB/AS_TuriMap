@@ -12,13 +12,15 @@ dependencies:
   # Arquitectura
   equatable: ^2.0.5
   dartz: ^0.10.1
-  get_it: ^7.6.4          # Inyección de dependencias
-  flutter_bloc: ^8.1.3    # Gestión de estado (patrón Observer)
+  get_it: ^7.6.4
+  flutter_bloc: ^8.1.3
   # Mapa
   flutter_map: ^6.1.0
   latlong2: ^0.9.0
   # Navegación
   go_router: ^13.2.0
+  # Backend — Supabase (PostgreSQL + Auth + Storage)
+  supabase_flutter: ^2.3.4
   # UI
   cupertino_icons: ^1.0.2
 

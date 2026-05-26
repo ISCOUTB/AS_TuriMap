@@ -10,6 +10,9 @@ class FototecaItem extends Equatable {
   final int? anioAprox;
   final String? urlThumbnail;
   final List<String>? tags;
+  final String? puntoRutaId;
+  final String? epocaHistorica;
+  final bool esDestacada;
 
   const FototecaItem({
     required this.id,
@@ -21,8 +24,11 @@ class FototecaItem extends Equatable {
     this.anioAprox,
     this.urlThumbnail,
     this.tags,
+    this.puntoRutaId,
+    this.epocaHistorica,
+    this.esDestacada = false,
   });
 
   @override
-  List<Object?> get props => [id, titulo, urlImagen];
+  List<Object?> get props => [id, titulo, puntoRutaId];
 }

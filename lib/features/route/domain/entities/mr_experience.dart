@@ -1,10 +1,20 @@
 import 'package:equatable/equatable.dart';
 
+// Tipos válidos según el CHECK del SQL
+enum MrExperienceType {
+  arOverlay,
+  model3d,
+  video360,
+  imagenHistorica,
+  audioGuiado,
+  quiz,
+}
+
 class MrExperience extends Equatable {
   final String id;
   final String puntoRutaId;
   final String titulo;
-  final String tipo;           // 'ar_overlay','3d_model','video_360', etc.
+  final String tipo;
   final String? descripcion;
   final String? assetUrl;
   final String? thumbnailUrl;
@@ -26,5 +36,5 @@ class MrExperience extends Equatable {
   });
 
   @override
-  List<Object?> get props => [id, puntoRutaId, titulo, tipo, disponible];
+  List<Object?> get props => [id, puntoRutaId, tipo];
 }

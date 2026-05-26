@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../domain/entities/route_point.dart';
+import 'package:turimap/features/route/presentation/pages/point_detail_page.dart';
 
 class RoutePointCard extends StatelessWidget {
   final RoutePoint point;
@@ -70,13 +71,13 @@ class RoutePointCard extends StatelessWidget {
                 icon: const Icon(Icons.view_in_ar, size: 18),
                 label: const Text('Ver experiencia MR'),
                 onPressed: () {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(
-                      content: Text('Experiencia MR — Próximamente'),
-                      backgroundColor: Color(0xFF006B75),
-                    ),
-                  );
-                },
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => PointDetailPage(point: point),
+                  ),
+                );
+              },
               ),
             ),
           ],

@@ -1,11 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:turimap/core/di/injection_container.dart' as di;
 import 'package:turimap/core/utils/constants.dart';
+import 'package:turimap/core/utils/supabase_config.dart';
 import 'package:turimap/features/route/presentation/bloc/route_bloc.dart';
 import 'package:turimap/features/route/presentation/pages/map_page.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  await Supabase.initialize(
+    url: SupabaseConfig.url,
+    anonKey: SupabaseConfig.anonKey,
+  );
+
   await di.initDependencies();
   runApp(const TuriMapApp());
 }

@@ -8,8 +8,7 @@ class RoutePoint extends Equatable {
   final double longitude;
   final String mrExperienceId;
   final int order;
-
-  // Campos nuevos (del schema completo)
+  // Campos adicionales del SQL (v_puntos_completos)
   final String? imageUrl;
   final String? categoria;
   final String? categoriaColor;
@@ -36,8 +35,5 @@ class RoutePoint extends Equatable {
   });
 
   @override
-  List<Object?> get props => [
-        id, name, description, latitude, longitude,
-        mrExperienceId, order, patrimonioUnesco, mrDisponible,
-      ];
+  List<Object?> get props => [id, name, latitude, longitude, order];
 }
